@@ -14,10 +14,7 @@ export default function Home() {
           setIsMenuClicked={setIsMenuClicked}
           isMenuClicked={isMenuClicked}
         />
-        <HomeBody
-          isMenuClicked={isMenuClicked}
-          setIsMenuClicked={setIsMenuClicked}
-        />
+        <HomeBody isMenuClicked={isMenuClicked} />
       </div>
       <FooterScroll isMenuClicked={isMenuClicked} />
     </>
