@@ -17,7 +17,7 @@ const TwitterToAlter = () => {
         <Image src={twitterToAlterImg} alt="project" width={660} height={500} />
         <p className="text-[#A2A3A2] mt-8 leading-[30px] font-[600] text-[20px]">
           I had the privilege of designing a beautifully crafted wedding website
-          that offered an intimate glimpse into the couple's love story,
+          that offered an intimate glimpse into the couple&apos;s love story,
           provided all essential wedding details, and created a space for guests
           to share and relive memories through photo sharing
         </p>

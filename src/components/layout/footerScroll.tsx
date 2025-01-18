@@ -2,7 +2,11 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import crownIcon from "../../../public/icons/crownIcon.svg";
 
-export default function FooterScroll({ isMenuClicked }: any) {
+export default function FooterScroll({
+  isMenuClicked,
+}: {
+  isMenuClicked: boolean;
+}) {
   return (
     <div className={`h-[5vh] ${isMenuClicked ? "opacity-20" : ""}`}>
       <Marquee

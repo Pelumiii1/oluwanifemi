@@ -9,27 +9,12 @@ const MenuContent = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [hoveredText, setHoveredText] = useState<null | string>(null);
 
-  const handleMouseMove = (e: any) => {
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
     setPosition({
       x: e.clientX - rect.left,
       y: e.clientY - rect.top,
     });
-  };
-
-  const getBackgroundImage = () => {
-    switch (hoveredText) {
-      case "What have I done":
-        return image1.src;
-      case "Who am I?":
-        return whoAmI.src;
-      case "My playground":
-        return playgroundImg.src;
-      case "Need help?":
-        return needHelp.src;
-      default:
-        return null;
-    }
   };
 
   const links = [

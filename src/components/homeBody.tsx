@@ -8,7 +8,7 @@ import oluwanifemiPhoto from "../../public/photo1.svg";
 import crownIcon from "../../public/icons/crownIcon.svg";
 import MenuContent from "./menuContent";
 
-const HomeBody = ({ isMenuClicked, setIsMenuClicked }: any) => {
+const HomeBody = ({ isMenuClicked }: { isMenuClicked: boolean }) => {
   const [isFocused, setIsFocused] = useState(false);
 
   if (isMenuClicked) {
